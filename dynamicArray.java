@@ -67,7 +67,7 @@ public class Array <T> implements Iterable <T>{
 	@Override public java.util.Iterator <T> iterator () {
 		return new java.util.Iterator <T> () {
 			int index = 0;
-			public boolean hasNext() { return index < len; } //checks of the index has next element or not
+			public boolean hasNext() { return index < len; } //checks if the index has next element or not
 			public T newt() {return arr[index++]; } //returns next element
 		};
 	}
