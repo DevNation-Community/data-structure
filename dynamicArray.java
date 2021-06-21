@@ -29,7 +29,7 @@ public class Array <T> implements Iterable <T>{
 			else capacity *= 2; //doubling the size of array
 			T[] new_arr = (T[]) new Object[capacity];
 			for (int i = 0; i<len; i++)
-				New-arr[i] = arr[i];
+				new_arr[i] = arr[i];
 			Arr = new_arr;
 		}
 	arr[len++] = elem;
@@ -48,7 +48,7 @@ public class Array <T> implements Iterable <T>{
 	//removes element
 	public  boolean remove(Object obj) {
 		for(int i = 0; i< len; i++){
-			if(arr[i].equals(bj)){
+			if(arr[i].equals(obj)){
 				removeAt(i); return true;}} 
 		return false;
 	}
